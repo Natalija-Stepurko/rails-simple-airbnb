@@ -8,10 +8,12 @@
 
 require 'faker'
 
+Flat.destroy_all
+
 5.times do
   puts "creating flat"
   flat = Flat.create!(
-    name: Faker::Books::Dune.quote,
+    name: Faker::Lorem.word,
     address: Faker::Address.street_name,
     description: Faker::Lorem.paragraphs,
     price_per_night: rand(30..300),
