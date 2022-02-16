@@ -1,3 +1,3 @@
 class FlatsController < ApplicationController
-  reseorces :flats
+  resources :flats
 end
